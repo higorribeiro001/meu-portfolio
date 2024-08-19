@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Higor R. Araujo</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body" class="m-0 p-0 overflow-x-hidden">
+    <section>
+        <div id="init" class="p-lg-5 p-md-3 my-5 my-lg-0">
+            <h1 id="phrase-init" class="font-weight-bold text-light text-center">
+                Seja bem-vindo(a) ao meu portfólio!
+            </h1>
+        </div>
+        <div class="row d-flex gap-2 justify-content-center">
+            <div class="buttons col-1 d-flex flex-column justify-content-between mr-5">
+                <button class="btn py-3 mb-5 bg-secondary rounded border border-dark font-weight-bold" data-floor="3"
+                    title="Apresentação">3</button>
+                <button class="btn py-3 my-5 bg-secondary rounded border border-dark font-weight-bold" data-floor="2"
+                    title="Formação">2</button>
+                <button class="btn py-3 my-5 bg-secondary rounded border border-dark font-weight-bold" data-floor="1"
+                    title="Projetos">1</button>
+                <button class="btn py-3 my-5 bg-secondary rounded border border-dark font-weight-bold" data-floor="0"
+                    title="Contatos">T</button>
+            </div>
+            <div class="d-flex justify-content-center col-6 col-md-4 col-lg-2 col-sm-6 p-0 mb-5">
+                <div class="area-elevator border border-dark d-flex justify-content-center mb-5">
+                    <div class="elevator p-0 d-flex justify-content-center h-25">
+                        <div id="ports" class="position-absolute h-25 close-elevator">
+                            <div id="port-1" class="bg-secondary border border-dark port-left-closed"></div>
+                            <div id="port-2" class="bg-secondary border border-dark port-right-closed"></div>
+                        </div>
+                        <div class="info-elevator">
+                            <div class="area-num rounded bg-dark d-flex justify-content-center items-center">
+                                <p id="num-elevator" class="d-flex text-success mb-0 text-center items-center">3
+                                </p>
+                            </div>
+                            <p id="title-elevator" class="text-center font-weight-bold text-dark">
+                                Apresentação
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./images/elevador.jpg" alt="elevador" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./Elevator.js"></script>
+
+    <script>
+        $(() => {
+            window.elevator = new Elevator();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+* {
+    font-family: "Exo 2", sans-serif;
+}
+
+#body {
+    background-image: url('../images/predio.jpg');
+}
+
+#body-portfolio {
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+    background-image: url('../images/predio.jpg');
+}
+
+.buttons {
+    height: 1550px;
+}
+
+.area-elevator {
+    height: 1868px; 
+    background-color: #252525; 
+    width: 95%; 
+    max-width: 322px;
+    min-width: 150px;
+}
+
+.area-num {
+    width: 25px; 
+    height: 25px;
+}
+
+#title-elevator {
+    margin-top: 122px;
+}
+
+.open-elevator {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+.close-elevator {
+    display: flex;
+    justify-content: space-between;
+    width: 322px;
+}
+
+.port-right-open {
+    width: 0; 
+    height: 100%; 
+    z-index: 999;
+}
+
+.port-right-closed {
+    width: 50%; 
+    height: 100%; 
+    z-index: 999;
+}
+
+.port-left-open {
+    width: 0; 
+    height: 100%; 
+    z-index: 999;
+}
+
+.port-left-closed {
+    width: 50%; 
+    height: 100%; 
+    z-index: 999;
+}
+
+.floor-3 {
+    margin-top: 0;
+}
+
+.floor-2 {
+    margin-top: 467px;
+}
+
+.floor-1 {
+    margin-top: 934px;
+}
+
+.floor-0 {
+    margin-top: 1401px;
+}
+
+.info-elevator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 998;
+    margin-top: 80px;
+}
+
+#ports {
+    width: 95%;
+    min-width: 95%;
+}
+
+#ports div {
+    height: 98%;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+}
+
+.el {
+    height: auto;
+}
+
+.area-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 998;
+    margin-top: 80px;
+}
+
+.card {
+    width: 750px;
+}
+
+.card-projects {
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+.img {
+    width: 255px;
+}
+
+.img-formations {
+    width: 255px;
+}
+
+.img-higor {
+    width: 230px;
+}
+
+.img-project1 {
+    width: 360px;
+}
+
+.img-project3 {
+    width: 300px;
+}
+
+.description-project3 {
+    width: 50%;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-buttons img {
+    width: 70px;
+}
+
+.container-project {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-project-reverse {
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width:900px) {
+
+    .card {
+        width: 80%;
+    }
+
+    .img-higor {
+        width: 100%;
+    }
+
+    .img-formations {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:1800px) {
+    .container-project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-project-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .img-projects {
+        width: 100%;
+    }
+
+    .description-project3 {
+        width: 100%;
+    }
+}
