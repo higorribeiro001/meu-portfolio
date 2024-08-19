@@ -4,6 +4,7 @@
 
 #body {
     background-image: url('../images/predio.jpg');
+    overflow-x: hidden;
 }
 
 #body-portfolio {
